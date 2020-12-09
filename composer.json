@@ -12,5 +12,10 @@
             "email": "gregory@kiboko.fr"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Kiboko\\Component\\ETL\\Contract\\Configurator\\": "src"
+        }
+    },
     "minimum-stability": "dev"
 }
