@@ -3,6 +3,7 @@
     "description": "Contracts for describing configuration formats and building optimized code from it",
     "type": "library",
     "require": {
+        "php": ">=7.4",
         "nikic/php-parser": "^4.9@dev"
     },
     "authors": [
