@@ -1,0 +1,15 @@
+{
+    "name": "php-etl/configurator-contracts",
+    "description": "Contracts for describing configuration formats and building optimized code from it",
+    "type": "library",
+    "require": {
+        "nikic/php-parser": "^4.9@dev"
+    },
+    "authors": [
+        {
+            "name": "Grégory Planchat",
+            "email": "gregory@kiboko.fr"
+        }
+    ],
+    "minimum-stability": "dev"
+}
