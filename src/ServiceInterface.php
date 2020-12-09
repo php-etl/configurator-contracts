@@ -6,6 +6,7 @@ use PhpParser\Node;
 
 interface ServiceInterface
 {
+    public function normalize(array $config): array;
     public function validate(array $config): bool;
     /** @return array<Node> */
     public function compile(array $config): array;
