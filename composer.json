@@ -1,22 +1,32 @@
 {
     "name": "php-etl/configurator-contracts",
-    "description": "Contracts for describing configuration formats and building optimized code from it",
+    "description": "This library describes contracts for defining configuration formats and building optimized code from it",
     "type": "library",
-    "require": {
-        "php": ">=7.4",
-        "nikic/php-parser": "^4.9@dev",
-        "symfony/config": "^4.4 || ^5.0"
-    },
+    "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
+        {
+            "name": "Kiboko SAS",
+            "homepage": "http://kiboko.fr"
+        },
         {
             "name": "Grégory Planchat",
             "email": "gregory@kiboko.fr"
         }
     ],
+    "require": {
+        "php": "^8.0",
+        "nikic/php-parser": "^4.9@dev",
+        "symfony/config": "^5.2"
+    },
     "autoload": {
         "psr-4": {
-            "Kiboko\\Component\\ETL\\Contract\\Configurator\\": "src"
+            "Kiboko\\Contract\\ETL\\Configurator\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
 }
