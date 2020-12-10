@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Kiboko\Component\ETL\Contract\Configurator;
+namespace Kiboko\Contract\ETL\Configurator;
 
 use PhpParser\Node;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -8,9 +8,22 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 interface FactoryInterface
 {
     public function configuration(): ConfigurationInterface;
-    /** @throws ConfigurationExceptionInterface */
+
+    /**
+     * @param array<string,string> $config
+     * @return array<string,string>
+     * @throws ConfigurationExceptionInterface
+     */
     public function normalize(array $config): array;
+
+    /**
+     * @param array<string,string> $config
+     */
     public function validate(array $config): bool;
-    /** @return array<Node> */
+
+    /**
+     * @param array<string,string> $config
+     * @return array<Node>
+     */
     public function compile(array $config): array;
 }

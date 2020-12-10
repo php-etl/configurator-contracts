@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
-namespace Kiboko\Component\ETL\Contract\Configurator;
+namespace Kiboko\Contract\ETL\Configurator;
 
-interface ConfigurationExceptionInterface
+interface ConfigurationExceptionInterface extends \Throwable
 {
 }
