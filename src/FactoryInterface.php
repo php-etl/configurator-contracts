@@ -2,6 +2,7 @@
 
 namespace Kiboko\Contract\ETL\Configurator;
 
+use PhpParser\Builder;
 use PhpParser\Node;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
@@ -23,7 +24,7 @@ interface FactoryInterface
 
     /**
      * @param array<string,string> $config
-     * @return array<Node>
+     * @return Builder
      */
-    public function compile(array $config): array;
+    public function compile(array $config): Builder;
 }
