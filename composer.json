@@ -21,15 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Kiboko\\Contract\\ETL\\Configurator\\": "src/"
+            "Kiboko\\Contract\\Configurator\\": "src/"
         }
     },
     "extra": {
         "branch-alias": {
             "dev-master": "0.1.x-dev"
         }
-    },
-    "require-dev": {
-        "phpstan/phpstan": "^0.12.0@dev"
     }
 }

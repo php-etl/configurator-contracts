@@ -1,9 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Kiboko\Contract\ETL\Configurator;
+namespace Kiboko\Contract\Configurator;
 
 use PhpParser\Builder;
-use PhpParser\Node;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 interface FactoryInterface
