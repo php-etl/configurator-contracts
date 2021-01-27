@@ -2,7 +2,6 @@
 
 namespace Kiboko\Contract\Configurator;
 
-use PhpParser\Builder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 interface FactoryInterface
