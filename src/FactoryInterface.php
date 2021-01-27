@@ -23,7 +23,6 @@ interface FactoryInterface
 
     /**
      * @param array<string,string> $config
-     * @return Builder
      */
-    public function compile(array $config): Builder;
+    public function compile(array $config): RepositoryInterface;
 }
