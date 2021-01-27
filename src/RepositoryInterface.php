@@ -6,8 +6,8 @@ use PhpParser\Builder;
 
 interface RepositoryInterface
 {
-    public function addFiles(FileInterface ...$file): self;
-    public function addPackages(string ...$package): self;
+    public function addFiles(FileInterface ...$files): self;
+    public function addPackages(string ...$packages): self;
     public function getBuilder(): Builder;
     public function merge(RepositoryInterface $friend): self;
 }
