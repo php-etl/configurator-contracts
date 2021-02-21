@@ -10,18 +10,18 @@ interface FactoryInterface
 
     /**
      * @param array<string,string> $config
-     * @return array<string,string>
+     * @return array<string,mixed>
      * @throws ConfigurationExceptionInterface
      */
     public function normalize(array $config): array;
 
     /**
-     * @param array<string,string> $config
+     * @param array<string,mixed> $config
      */
     public function validate(array $config): bool;
 
     /**
-     * @param array<string,string> $config
+     * @param array<string,mixed> $config
      */
     public function compile(array $config): RepositoryInterface;
 }
