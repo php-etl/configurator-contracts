@@ -6,5 +6,5 @@ use PhpParser\Node;
 
 interface StepRepositoryInterface extends RepositoryInterface
 {
-    public function withLogger(Node\Expr $logger);
+    public function withLogger(Node\Expr $logger): self;
 }
