@@ -2,11 +2,13 @@
 
 namespace Kiboko\Contract\Configurator;
 
+use Kiboko\Contract\Packaging\DirectoryInterface;
+use Kiboko\Contract\Packaging\FileInterface;
 use PhpParser\Builder;
 
 interface RepositoryInterface
 {
-    public function addFiles(FileInterface ...$files): self;
+    public function addFiles(FileInterface|DirectoryInterface ...$files): self;
     /** @return iterable<FileInterface> */
     public function getFiles(): iterable;
     public function addPackages(string ...$packages): self;
