@@ -3,7 +3,7 @@
     "description": "This library describes contracts for defining configuration formats and building optimized code from it",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Kiboko SAS",
