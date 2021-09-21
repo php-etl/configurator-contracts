@@ -10,7 +10,7 @@ final class Pipeline
 
     public function __construct(
         public string $name,
-        public array $dependencies,
+        public array $dependencies = [],
         array $steps = [],
     ) {
         foreach ($steps as $name => $type) {
