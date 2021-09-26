@@ -7,5 +7,6 @@ final class StepTransformer
 {
     public function __construct(
         public string $name = 'transformer',
-    ) {}
+    ) {
+    }
 }

@@ -7,5 +7,6 @@ final class Feature
 {
     public function __construct(
         public string $name,
-    ) {}
+    ) {
+    }
 }

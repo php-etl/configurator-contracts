@@ -7,5 +7,6 @@ final class StepExtractor
 {
     public function __construct(
         public string $name = 'extractor',
-    ) {}
+    ) {
+    }
 }

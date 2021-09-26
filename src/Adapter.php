@@ -7,5 +7,6 @@ final class Adapter
 {
     public function __construct(
         public string $name,
-    ) {}
+    ) {
+    }
 }

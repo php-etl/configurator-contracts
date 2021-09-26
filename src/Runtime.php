@@ -7,5 +7,6 @@ final class Runtime
 {
     public function __construct(
         public string $name,
-    ) {}
+    ) {
+    }
 }
