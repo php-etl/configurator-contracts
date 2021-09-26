@@ -8,6 +8,7 @@ use PhpParser\Builder;
 
 interface RepositoryInterface
 {
+    /** @param FileInterface|DirectoryInterface<FileInterface> ...$files */
     public function addFiles(FileInterface|DirectoryInterface ...$files): self;
     /** @return iterable<FileInterface> */
     public function getFiles(): iterable;
