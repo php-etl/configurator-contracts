@@ -6,7 +6,7 @@ namespace Kiboko\Contract\Configurator\Pipeline;
 final class StepLoader
 {
     public function __construct(
-        public string $name = 'loader',
+        public ?string $name = 'loader',
     ) {
     }
 }
