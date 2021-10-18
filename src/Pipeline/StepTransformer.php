@@ -6,7 +6,7 @@ namespace Kiboko\Contract\Configurator\Pipeline;
 final class StepTransformer
 {
     public function __construct(
-        public string $name = 'transformer',
+        public ?string $name = 'transformer',
     ) {
     }
 }

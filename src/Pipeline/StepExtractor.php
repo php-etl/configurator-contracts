@@ -6,7 +6,7 @@ namespace Kiboko\Contract\Configurator\Pipeline;
 final class StepExtractor
 {
     public function __construct(
-        public string $name = 'extractor',
+        public ?string $name = 'extractor',
     ) {
     }
 }

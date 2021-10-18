@@ -18,29 +18,30 @@ final class Pipeline
         array $steps = [],
     ) {
         foreach ($steps as $name => $type) {
-            if (!is_string($name)) {
-                if (
+            if (
+                !is_string($name)
+                && (
                     $type instanceof Pipeline\StepExtractor
                     || $type instanceof Pipeline\StepTransformer
                     || $type instanceof Pipeline\StepLoader
-                ) {
-                    $this->steps[] = $type;
-                }
+                )
+            ) {
+                $this->steps[] = $type;
                 continue;
             }
 
             if ($type === 'extractor') {
-                $this->steps[] = new Pipeline\StepExtractor(name: $name);
+                $this->steps[] = new Pipeline\StepExtractor(name: is_string($name) && strlen($name) > 0 ? $name : null);
                 continue;
             }
 
             if ($type === 'transformer') {
-                $this->steps[] = new Pipeline\StepTransformer(name: $name);
+                $this->steps[] = new Pipeline\StepTransformer(name: is_string($name) && strlen($name) > 0 ? $name : null);
                 continue;
             }
 
             if ($type === 'loader') {
-                $this->steps[] = new Pipeline\StepLoader(name: $name);
+                $this->steps[] = new Pipeline\StepLoader(name: is_string($name) && strlen($name) > 0 ? $name : null);
                 continue;
             }
         }
