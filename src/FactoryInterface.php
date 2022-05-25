@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Kiboko\Contract\Configurator;
 
@@ -10,8 +12,10 @@ interface FactoryInterface
 
     /**
      * @param array<string,string> $config
-     * @return array<string,mixed>
+     *
      * @throws ConfigurationExceptionInterface
+     *
+     * @return array<string,mixed>
      */
     public function normalize(array $config): array;
 
