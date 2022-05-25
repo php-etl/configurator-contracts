@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Kiboko\Contract\Configurator;
 
@@ -9,7 +11,7 @@ final class Pipeline
     public array $steps = [];
 
     /**
-     * @param list<string> $dependencies
+     * @param list<string>                                                                                    $dependencies
      * @param array<string, string>|list<Pipeline\StepExtractor|Pipeline\StepTransformer|Pipeline\StepLoader> $steps
      */
     public function __construct(
@@ -19,7 +21,7 @@ final class Pipeline
     ) {
         foreach ($steps as $name => $type) {
             if (
-                !is_string($name)
+                !\is_string($name)
                 && (
                     $type instanceof Pipeline\StepExtractor
                     || $type instanceof Pipeline\StepTransformer
@@ -30,18 +32,18 @@ final class Pipeline
                 continue;
             }
 
-            if ($type === 'extractor') {
-                $this->steps[] = new Pipeline\StepExtractor(name: is_string($name) && strlen($name) > 0 ? $name : null);
+            if ('extractor' === $type) {
+                $this->steps[] = new Pipeline\StepExtractor(name: \is_string($name) && \strlen($name) > 0 ? $name : null);
                 continue;
             }
 
-            if ($type === 'transformer') {
-                $this->steps[] = new Pipeline\StepTransformer(name: is_string($name) && strlen($name) > 0 ? $name : null);
+            if ('transformer' === $type) {
+                $this->steps[] = new Pipeline\StepTransformer(name: \is_string($name) && \strlen($name) > 0 ? $name : null);
                 continue;
             }
 
-            if ($type === 'loader') {
-                $this->steps[] = new Pipeline\StepLoader(name: is_string($name) && strlen($name) > 0 ? $name : null);
+            if ('loader' === $type) {
+                $this->steps[] = new Pipeline\StepLoader(name: \is_string($name) && \strlen($name) > 0 ? $name : null);
                 continue;
             }
         }
