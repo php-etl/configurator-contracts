@@ -9,6 +9,7 @@ final class Action
 {
     public function __construct(
         public string $name,
+        public array $dependencies = [],
     ) {
     }
 }
