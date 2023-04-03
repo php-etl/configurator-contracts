@@ -13,9 +13,9 @@ interface FactoryInterface
     /**
      * @param array<string,string> $config
      *
-     * @throws ConfigurationExceptionInterface
-     *
      * @return array<string,mixed>
+     *
+     * @throws ConfigurationExceptionInterface
      */
     public function normalize(array $config): array;
 

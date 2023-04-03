@@ -18,11 +18,15 @@
         "php": "^8.2",
         "nikic/php-parser": "^4.10",
         "symfony/config": "^6.0",
-        "php-etl/packaging-contracts": "^0.2@dev",
-        "psr/log": "^1.0||^2.0||^3.0",
-        "symfony/expression-language": "^5.2"
+        "php-etl/packaging-contracts": "^0.3",
+        "psr/log": "^3.0",
+        "symfony/expression-language": "^6.0"
     },
     "require-dev": {
+        "infection/infection": "^0.26.18",
+        "phpunit/phpunit": "^10.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^1.10",
         "rector/rector": "^0.15"
     },
     "autoload": {
@@ -31,11 +35,14 @@
         }
     },
     "config": {
-        "bin-dir": "bin"
+        "bin-dir": "bin",
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "0.6.x-dev"
+            "dev-main": "0.7.x-dev"
         }
     }
 }
