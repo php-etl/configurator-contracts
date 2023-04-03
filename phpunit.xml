@@ -17,7 +17,7 @@
         backupStaticProperties="false"
         requireCoverageMetadata="false">
     <testsuites>
-        <testsuite name="Functional tests">
+        <testsuite name="functional">
             <directory>tests/functional/</directory>
         </testsuite>
     </testsuites>
