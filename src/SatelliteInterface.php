@@ -15,11 +15,11 @@ interface SatelliteInterface
 
     public function build(LoggerInterface $logger): void;
 
-//    public function start(LoggerInterface $logger, NetworkInterface $network): void;
+    //    public function start(LoggerInterface $logger, NetworkInterface $network): void;
 
-//    public function send(\JsonSerializable $payload): DeferredInterface;
+    //    public function send(\JsonSerializable $payload): DeferredInterface;
 
-//    public function stop(): void;
+    //    public function stop(): void;
 
-//    public function poll(LoggerInterface $logger): void;
+    //    public function poll(LoggerInterface $logger): void;
 }
