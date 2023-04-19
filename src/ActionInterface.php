@@ -6,7 +6,7 @@ namespace Kiboko\Contract\Configurator;
 
 use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
 
-interface PipelineActionInterface extends FactoryInterface
+interface ActionInterface extends FactoryInterface
 {
     public function interpreter(): ExpressionLanguage;
 
