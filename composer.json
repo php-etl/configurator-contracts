@@ -1,9 +1,13 @@
 {
     "name": "php-etl/configurator-contracts",
+    "repositories": [
+        {"type": "path", "url": "../packaging-contracts"}
+    ],
     "description": "This library describes contracts for defining configuration formats and building optimized code from it",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "Kiboko SAS",
