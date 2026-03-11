@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": "^8.4",
-        "nikic/php-parser": "^4.15",
+        "nikic/php-parser": "^5.6",
         "symfony/config": "^6.0",
         "php-etl/packaging-contracts": "0.3.*",
         "psr/log": "^3.0",
