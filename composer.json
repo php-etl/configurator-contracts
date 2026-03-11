@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.4",
         "nikic/php-parser": "^4.15",
         "symfony/config": "^6.0",
         "php-etl/packaging-contracts": "0.3.*",
@@ -24,8 +24,8 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.38",
-        "phpstan/phpstan": "^1.10",
-        "rector/rector": "^0.15"
+        "phpstan/phpstan": "^2.2",
+        "rector/rector": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -40,7 +40,8 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "0.8.x-dev"
+            "dev-main": "0.8.x-dev",
+            "dev-next": "0.8.x-dev"
         }
     }
 }
